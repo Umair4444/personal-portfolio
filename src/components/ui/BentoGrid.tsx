@@ -6,7 +6,6 @@ import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./Gradiendbg";
-import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 
@@ -127,9 +126,6 @@ export const BentoGridItem = ({
           <div className="font-sans text-lg lg:text-3xl max-w-96 font-bold z-10">
             {title}
           </div>
-
-          {/* 3D GitHub Globe for ID 2 */}
-          {id === 2 && <GridGlobe />}
 
           {/* Tech Stack List for ID 3 */}
           {id === 3 && (
