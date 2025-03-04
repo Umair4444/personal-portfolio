@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -8,8 +7,8 @@ import { ThemeProvider } from "./Provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Adrian's Portfolio",
-  description: "Modern & Minimal JS Mastery Portfolio",
+  title: "Umair's Portfolio",
+  description: "Bringing Ideas to life through Coding Portfolio",
 };
 
 export default function RootLayout({
