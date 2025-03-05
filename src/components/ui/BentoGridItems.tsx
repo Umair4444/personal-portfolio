@@ -3,6 +3,7 @@ import { IoCopyOutline } from "react-icons/io5";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import MagicButton from "./MagicButton";
+import ConfettiEffect from "./Confetti";
 
 export const BentoGridItem = ({
   className,
@@ -23,15 +24,20 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = useMemo(() => ["ReactJS", "JavaScript", "TypeScript"], []);
-  const rightLists = useMemo(() => ["CMS", "NextJS", "APIs"], []);
+  const leftLists = useMemo(() => ["HTML", "JavaScript", "TypeScript"], []);
+  const rightLists = useMemo(() => ["Python", "NextJS", "React"], []);
 
   const [copied, setCopied] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
 
   const handleCopy = () => {
     navigator.clipboard.writeText("theumairkhan44@gmail.com");
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    setShowConfetti(true);
+    setTimeout(() => {
+      setCopied(false);
+      setShowConfetti(false);
+    }, 3000);
   };
 
   return (
@@ -133,7 +139,6 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               {copied && <div className="absolute -bottom-5 right-0"></div>}
-
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
                 icon={<IoCopyOutline />}
@@ -141,6 +146,7 @@ export const BentoGridItem = ({
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
               />
+              <ConfettiEffect trigger={showConfetti} />
             </div>
           )}
         </div>
