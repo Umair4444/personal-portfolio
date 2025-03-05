@@ -4,7 +4,6 @@ import { IoCopyOutline } from "react-icons/io5";
 import Image from "next/image";
 import Lottie from "react-lottie";
 import { cn } from "@/lib/utils";
-import { BackgroundGradientAnimation } from "./Gradiendbg";
 import animationData from "@/data/Confetti.json";
 import MagicButton from "./MagicButton";
 
@@ -105,11 +104,11 @@ export const BentoGridItem = ({
         )}
 
         {/* Background Animation for ID 6 */}
-        {id === 6 && (
+        {/* {id === 6 && (
           <BackgroundGradientAnimation>
             <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
           </BackgroundGradientAnimation>
-        )}
+        )} */}
 
         {/* Text Content */}
         <div
