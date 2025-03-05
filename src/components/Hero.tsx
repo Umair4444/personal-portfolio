@@ -1,6 +1,6 @@
-"use client"
-import { FaLocationArrow } from "react-icons/fa6";
+"use client";
 
+import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerator";
@@ -44,8 +44,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80]">
-          Building Scalable & Dynamic Websites with Next.js
-
+            Building Scalable & Dynamic Websites with Next.js
           </p>
 
           {/**
@@ -55,7 +54,7 @@ const Hero = () => {
            */}
           <TextGenerateEffect
             words="Bringing Ideas to Life with Clean Code & Stunning UI/UX!"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className=" text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl ">

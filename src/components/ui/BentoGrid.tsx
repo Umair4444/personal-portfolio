@@ -3,7 +3,6 @@ import { useMemo, useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import Image from "next/image";
 import Lottie from "react-lottie";
-
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./Gradiendbg";
 import animationData from "@/data/Confetti.json";

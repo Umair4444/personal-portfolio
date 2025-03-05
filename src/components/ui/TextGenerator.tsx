@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -10,50 +10,36 @@ export const TextGenerateEffect = ({
   words: string;
   className?: string;
 }) => {
+  // useAnimate returns a ref and an animate function.
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
-  useEffect(() => {
-    console.log(wordsArray);
-    animate(
-      "span",
-      {
-        opacity: 1,
-      },
-      {
-        duration: 2,
-        delay: stagger(0.2),
-      }
-    );
-  }, [scope.current]);
 
-  const renderWords = () => {
-    return (
-      <motion.div ref={scope} className="">
-        {wordsArray.map((word, idx) => {
-          return (
+  // Memoize the words array to avoid recalculating on every render.
+  const wordsArray = useMemo(() => words.split(" "), [words]);
+
+  useEffect(() => {
+    // Animate all spans to fade in with a stagger delay.
+    animate("span", { opacity: 1 }, { duration: 2, delay: stagger(0.2) });
+  }, [animate]);
+
+  return (
+    <div className={cn("font-bold w-full", className)}>
+      <div className="my-4 w-full">
+        <motion.div
+          ref={scope}
+          className=" text-center dark:text-white text-black leading-snug"
+        >
+          {wordsArray.map((word, idx) => (
             <motion.span
-              key={word + idx}
-              // change here if idx is greater than 3, change the text color to #CBACF9
-              className={`  ${
-                idx > 4 ? "text-purple" : "dark:text-white text-black"
-              } opacity-0`}
+              key={`${word}-${idx}`}
+              className={cn(
+                "opacity-0 ",
+                idx > 4 ? "text-[#CBACF9] " : ""
+              )}
             >
               {word}{" "}
             </motion.span>
-          );
-        })}
-      </motion.div>
-    );
-  };
-
-  return (
-    <div className={cn("font-bold", className)}>
-      {/* mt-4 to my-4 */}
-      <div className="my-4">
-        {/* remove  text-2xl from the original */}
-        <div className=" dark:text-white text-black leading-snug ">
-          {renderWords()}
-        </div>
+          ))}
+        </motion.div>
       </div>
     </div>
   );
