@@ -105,34 +105,39 @@ export const projects = [
 
 export const testimonials = [
   {
+    id: 1,
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with Adrian was a game-changer for our business. His attention to detail and innovative approach significantly improved our online presence. Highly recommended!",
+    name: "Sophia Martinez",
+    title: "CEO of TechNova Solutions",
   },
   {
+    id: 2,
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Adrian’s ability to transform our vision into reality exceeded our expectations. His expertise in frontend development brought our website to life with an outstanding user experience.",
+    name: "James Carter",
+    title: "Product Manager at Elevate Digital",
   },
   {
+    id: 3,
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "From start to finish, Adrian showcased professionalism and creativity. His deep understanding of UI/UX made our platform more engaging and user-friendly.",
+    name: "Isabella Reynolds",
+    title: "Founder of Creative Pulse Agency",
   },
   {
+    id: 4,
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Adrian's technical skills and problem-solving mindset helped us overcome complex challenges. His dedication to quality and performance optimization is truly commendable.",
+    name: "David Thompson",
+    title: "Lead Engineer at SwiftTech Labs",
   },
   {
+    id: 5,
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "We were impressed by Adrian’s commitment to excellence. His ability to seamlessly integrate modern technologies into our project made a remarkable difference.",
+    name: "Emma Wilson",
+    title: "Marketing Director at BrightPath Media",
   },
 ];
 
