@@ -78,19 +78,37 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Basic HTML Projects - Using HTML , CSS & JAVASCRIPT",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "Fundamental Web Projects – Leveraging HTML, CSS & JavaScript",
+    des: "A collection of essential web projects, including forms, landing pages, and about sections, built with clean and responsive design principles.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: [
+      "/html.svg",
+      "/css.svg",
+      "/javascript.svg",
+      "/ts.svg",
+      "/bootstrap.svg",
+      "/wordpress.svg",
+      "/figma.svg",
+      "/netlify.svg",
+    ],
     link: "/ui.earth.com",
   },
   {
     id: 2,
     title:
-      "Typescript Projects - Using React & NextJs Library and Framework respectively",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+      "TypeScript Projects – Building with React & Next.js and using headless CMS",
+    des: "Building  webapps with nextjs and using headless cms for content management with different libraries and framework",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: [
+      "/ts.svg",
+      "/next.svg",
+      "/tail.svg",
+      "/sanity.svg",
+      "/shadcn.svg",
+      "/aceternity.svg",
+      "/node.svg",
+      "/vercel.svg",
+    ],
     link: "/ui.yoom.com",
   },
   {
@@ -98,7 +116,13 @@ export const projects = [
     title: "Python Projects - Using UV and Streamlit",
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: [
+      "/python.svg",
+      "/streamlit.svg",
+      "/uv.svg",
+      "/numpy.svg",
+      "/pandas.svg",
+    ],
     link: "/ui.aiimg.com",
   },
 ];
@@ -107,37 +131,42 @@ export const testimonials = [
   {
     id: 1,
     quote:
-      "Working with Adrian was a game-changer for our business. His attention to detail and innovative approach significantly improved our online presence. Highly recommended!",
+      "Umair's expertise in web development transformed our project. His attention to detail and creativity took our platform to the next level.",
     name: "Sophia Martinez",
     title: "CEO of TechNova Solutions",
+    img: "/user.svg",
   },
   {
     id: 2,
     quote:
-      "Adrian’s ability to transform our vision into reality exceeded our expectations. His expertise in frontend development brought our website to life with an outstanding user experience.",
+      "Working with Umair was an absolute pleasure. His ability to solve complex problems and implement innovative solutions was impressive.",
     name: "James Carter",
     title: "Product Manager at Elevate Digital",
+    img: "/user.svg",
   },
   {
     id: 3,
     quote:
-      "From start to finish, Adrian showcased professionalism and creativity. His deep understanding of UI/UX made our platform more engaging and user-friendly.",
+      "Umair delivered outstanding results with precision and efficiency. His technical skills and design sense created a seamless user experience.",
     name: "Isabella Reynolds",
     title: "Founder of Creative Pulse Agency",
+    img: "/user.svg",
   },
   {
     id: 4,
     quote:
-      "Adrian's technical skills and problem-solving mindset helped us overcome complex challenges. His dedication to quality and performance optimization is truly commendable.",
+      "Umair's knowledge of modern development tools and frameworks helped us optimize our project. His problem-solving approach made a huge impact.",
     name: "David Thompson",
     title: "Lead Engineer at SwiftTech Labs",
+    img: "/user.svg",
   },
   {
     id: 5,
     quote:
-      "We were impressed by Adrian’s commitment to excellence. His ability to seamlessly integrate modern technologies into our project made a remarkable difference.",
+      "Umair's dedication and expertise were evident in every aspect of our project. He ensured that our website was both functional and visually appealing.",
     name: "Emma Wilson",
     title: "Marketing Director at BrightPath Media",
+    img: "/user.svg",
   },
 ];
 
@@ -177,29 +206,33 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Frontend Developer Intern",
+    company: "Saiket System",
+    desc: "Worked on the development of a web-based platform using React.js and Next.js, improving UI interactivity and performance.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "C Programming",
+    company: "Harvard University",
+    desc: "Currently learning CS50 from Harvard University, taught by David Malan, to build a strong foundation in computer science and programming with C.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Freelance App & Web Developer",
+    company: "Fiverr, Upwork, Freelancer, Guru",
+    desc: "Developed custom mobile and web applications for clients, handling projects from initial concept to deployment. Specialized in Next.js, React, and eCommerce solutions.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Gen AI Engineer",
+    company: "GIAIC - Certified from Karachi University",
+    desc: "Currently learning TypeScript and Python while exploring Generative AI technologies to build intelligent and innovative applications.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -209,13 +242,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/Umair4444",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/fiverr.svg",
+    link: "https://www.fiverr.com/users/umairkhan44s",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/umair-khan44",
   },
 ];

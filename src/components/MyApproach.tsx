@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
-
 import { AnimatePresence, motion } from "motion/react";
 import { CanvasRevealEffect } from "./ui/Canvas-Reveal-Effect";
-import { div } from "motion/react-client";
 
 export function MyApproach() {
   return (
@@ -14,11 +12,9 @@ export function MyApproach() {
         </h1>
         <div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8">
           <Card
-            title="Sheetal is Nisha"
+            title="Discovery & Consultation"
             icon={<AceternityIcon order="Level 1" />}
-            des="We'll collaborate to map out your website's goals, target audience, 
-            and key functionalities. We'll discuss things like site structure, 
-            navigation, and content requirements."
+            des="I start by understanding your project requirements, goals, and vision. Through in-depth discussions, I identify the best approach to bring your ideas to life."
           >
             <CanvasRevealEffect
               animationSpeed={5.1}
@@ -26,11 +22,9 @@ export function MyApproach() {
             />
           </Card>
           <Card
-            title="Nisha is Munni"
+            title="Design & Development"
             icon={<AceternityIcon order="Level 2" />}
-            des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+            des="With a clear plan in place, I craft a visually stunning and highly functional website using modern technologies, ensuring responsiveness, performance, and seamless user experience."
           >
             <CanvasRevealEffect
               animationSpeed={3}
@@ -45,11 +39,9 @@ export function MyApproach() {
             <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
           </Card>
           <Card
-            title="Munni is Aditi"
-            icon={<AceternityIcon order="Level 1" />}
-            des="We'll collaborate to map out your website's goals, target audience, 
-            and key functionalities. We'll discuss things like site structure, 
-            navigation, and content requirements."
+            title="Deployment & Support"
+            icon={<AceternityIcon order="Level 3" />}
+            des="Once the project is ready, I handle the deployment process efficiently. I also provide ongoing support and maintenance to ensure your website remains optimized and up-to-date."
           >
             <CanvasRevealEffect
               animationSpeed={3}

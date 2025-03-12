@@ -9,8 +9,8 @@ const RecentProjects = () => {
   return (
     <div className="py-20">
       <h1 className="heading">
-        A Small Selection Of{" "}
-        <span className="text-purple">Recent Projects</span>
+        My Complete Collection Of{" "}
+        <span className="text-purple">Projects Catalog</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center gap-16 mt-10">
         {projects.map(({ id, title, des, img, link, iconLists }) => (
@@ -41,21 +41,23 @@ const RecentProjects = () => {
               </p>
 
               <div className="flex items-center justify-between mt-7 mb-3 text-nowrap">
-                <div className="flex items-center">
-                  {iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                    >
-                      <Image
-                        src={icon}
-                        alt="icon5"
-                        width={60}
-                        height={60}
-                        className="p-2"
-                      />
-                    </div>
-                  ))}
+                <div className="flex justify-end items-center ">
+                  <div className="grid grid-cols-4 gap-2 ">
+                    {iconLists.map((icon, index) => (
+                      <div
+                        key={index}
+                        className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      >
+                        <Image
+                          src={icon}
+                          alt="icon5"
+                          width={60}
+                          height={60}
+                          className="p-2"
+                        />
+                      </div>
+                    ))}
+                  </div>
                   <div className="flex justify-center items-center mx-4">
                     <p className="flex md:text-sm lg:text-lg text-xs text-purple">
                       Check Live Site
