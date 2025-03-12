@@ -84,14 +84,14 @@ export const projects = [
     iconLists: [
       "/html.svg",
       "/css.svg",
-      "/javascript.svg",
       "/ts.svg",
+      "/javascript.svg",
       "/bootstrap.svg",
       "/wordpress.svg",
       "/figma.svg",
       "/netlify.svg",
     ],
-    link: "/ui.earth.com",
+    link: "/fundamental-web-projects",
   },
   {
     id: 2,
@@ -109,7 +109,7 @@ export const projects = [
       "/node.svg",
       "/vercel.svg",
     ],
-    link: "/ui.yoom.com",
+    link: "/typescript-projects",
   },
   {
     id: 3,
@@ -123,7 +123,7 @@ export const projects = [
       "/numpy.svg",
       "/pandas.svg",
     ],
-    link: "/ui.aiimg.com",
+    link: "/python-projects",
   },
 ];
 

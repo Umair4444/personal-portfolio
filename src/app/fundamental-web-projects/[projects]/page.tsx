@@ -1,9 +1,13 @@
-import React from 'react'
-
-const page = () => {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ projects: string }>;
+}) {
+  const { projects } = await params;
+  console.log(params);
   return (
-    <div>page</div>
-  )
+    <div>
+      <div>My Post: {projects}</div>
+    </div>
+  );
 }
-
-export default page
