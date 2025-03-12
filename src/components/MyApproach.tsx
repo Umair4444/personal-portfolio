@@ -3,7 +3,7 @@ import React from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { CanvasRevealEffect } from "./ui/Canvas-Reveal-Effect";
 
-export function MyApproach() {
+export default function MyApproach() {
   return (
     <>
       <section className="w-full py-20">

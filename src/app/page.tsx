@@ -3,7 +3,7 @@ import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
-import { MyApproach } from "@/components/MyApproach";
+import MyApproach from "@/components/MyApproach";
 import RecentProjects from "@/components/RecentProjects";
 
 export default function Home() {
